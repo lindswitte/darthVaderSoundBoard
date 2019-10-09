@@ -1,19 +1,14 @@
 console.log('hello world i am your father')
 
 
-let soundBoard = document.querySelector('.force');
-let button = document.querySelector('.button')
+let forceAudio = document.querySelector('audio.force');
+let forceButton = document.querySelector('button.force')
 
-
-let playSoundBoard = function() {
-
-	let soundBoardButtons = document.querySelector('.button')
-
-	let sounds  = document.querySelector('.sounds')
-	
+let playForceSound = function() {
+	forceAudio.play()
 }
 
-button.addEventListener('click', playSoundBoard)
+forceButton.addEventListener('click', playForceSound)
 
 
 /* sounds.forEach(function(sounds, i){ // happens 6 times
