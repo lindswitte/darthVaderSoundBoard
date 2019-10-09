@@ -1,0 +1,2 @@
+"use strict";console.log("hello world i am your father");var soundBoard=document.querySelector(".force"),button=document.querySelector(".button"),playSoundBoard=function(){document.querySelector(".button"),document.querySelector(".sounds")};button.addEventListener("click",playSoundBoard);
+//# sourceMappingURL=main.js.map
