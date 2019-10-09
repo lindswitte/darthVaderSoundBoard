@@ -1,2 +1,2 @@
-"use strict";console.log("hello world i am your father");var allAudios=document.querySelectorAll("audio"),allButtons=document.querySelectorAll("button"),currentSoundIndex=0,playAllAudios=function(){audio.button.forEach(function(o,l){o.play()}),currentSoundIndex++};
+"use strict";console.log("hello world i am your father");for(var allAudios=document.querySelectorAll("audio"),allButtons=document.querySelectorAll("button"),playAllAudios=function(){},i=0;i<allButtons.length;i++)allButtons[i].addEventListener("click",playAllAudios);
 //# sourceMappingURL=main.js.map

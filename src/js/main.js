@@ -3,25 +3,16 @@ console.log('hello world i am your father')
 let allAudios = document.querySelectorAll('audio');
 let allButtons = document.querySelectorAll('button');
 
-let currentSoundIndex = 0
 
 let playAllAudios = function(){
 
-	audio.button.forEach(function(audio, i){ // happens 6 times
-		audio.play();
-	})
-
-	currentSoundIndex++
+	let playForceSound = function(){
+	forceAudio.play()
+	}
 }
-
-
-
-
-
-
-
-
-
+for (var i = 0; i < allButtons.length; i++) {
+	allButtons[i].addEventListener('click', playAllAudios)
+}
 
 
 // let playForceSound = function() {
