@@ -1,2 +1,2 @@
-"use strict";console.log("hello world i am your father");var allAudios=document.querySelectorAll("audio"),allButtons=document.querySelectorAll("button"),playAllAudios=function(){};playForceSound.play();
+"use strict";console.log("hello world i am your father");var allAudios=document.querySelectorAll("audio"),allButtons=document.querySelectorAll("button"),playAllAudios=function(){};
 //# sourceMappingURL=main.js.map

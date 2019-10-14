@@ -10,7 +10,7 @@ let playAllAudios = function(){
 		for (var i = 0; i < allButtons.length; i++) {
 			allButtons[i].addEventListener('click', playAllAudios)
 		}
+		playForceSound.play();
 	}
 }
 
-playForceSound.play();
