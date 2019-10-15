@@ -8,9 +8,10 @@ let playAllAudios = function(){
 
 	let playForceSound = function(){
 		for (var i = 0; i < allButtons.length; i++) {
-			allButtons[i].addEventListener('click', playAllAudios)
+			allButtons[i].addEventListener('click', playForceSound)
 		}
-		playForceSound.play();
 	}
+	playForceSound();
 }
+playAllAudios();
 
