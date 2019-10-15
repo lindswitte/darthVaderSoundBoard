@@ -14,8 +14,6 @@ console.log('hello world i am your father')
 // }
 // playAllAudios();
 
-
-
 let offeringAudio = document.querySelector('audio.offering');
 let offeringButton = document.querySelector('button.offering');
 
