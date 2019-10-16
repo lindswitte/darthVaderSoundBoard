@@ -14,10 +14,16 @@ console.log('hello world i am your father')
 // }
 // playAllAudios();
 
-let offeringAudio = document.querySelector('audio.offering');
-let offeringButton = document.querySelector('button.offering');
 
-let playOfferingSound = function(){
+
+let offeringAudio = document.querySelector('audio.offering')
+let playOfferingAudio = function(){
 	offeringAudio.play()
 }
-offeringButton.addEventListener('click', playOfferingSound)
+
+let offeringButton = document.querySelector('button.offering')
+offeringButton.addEventListener('click', function() {
+	console.log('offering button click')
+})
+
+offeringButton.addEventListener('click', playOfferingAudio)
