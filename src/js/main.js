@@ -16,18 +16,15 @@ console.log('hello world i am your father')
 
 
 
+
+
+
 let offeringAudio = document.querySelector('audio.offering')
-offeringAudio.addEventListener('click', function(){
-	offeringAudio.play()
-})
-
-
-
 let offeringButton = document.querySelector('button.offering')
+
 offeringButton.addEventListener('click', function() {
-	if ( offeringButton.paused ) {
+	if ( offeringAudio.paused ) {
 		offeringAudio.play();
-		offeringButton.src = 'sounds/Offering.mp3';
 	}
 	console.log('offering button click')
 })

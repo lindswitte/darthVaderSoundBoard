@@ -1,2 +1,2 @@
-"use strict";console.log("hello world i am your father");var offeringAudio=document.querySelector("audio.offering");offeringAudio.addEventListener("click",function(){offeringAudio.play()});var offeringButton=document.querySelector("button.offering");offeringButton.addEventListener("click",function(){offeringButton.paused&&(offeringAudio.play(),offeringButton.src="sounds/Offering.mp3"),console.log("offering button click")});
+"use strict";console.log("hello world i am your father");var offeringAudio=document.querySelector("audio.offering"),offeringButton=document.querySelector("button.offering");offeringButton.addEventListener("click",function(){offeringAudio.paused&&offeringAudio.play(),console.log("offering button click")});
 //# sourceMappingURL=main.js.map
