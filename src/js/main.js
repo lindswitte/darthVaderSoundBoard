@@ -1,42 +1,73 @@
 console.log('hello world i am your father')
 
-let allAudios = document.querySelectorAll('audio');
-let allButtons = document.querySelectorAll('button');
+// NEW WORKING STUFF
 
-let offeringAudio = document.querySelector('audio.offering') // TEMP
+// find button
+let allButtons = document.querySelectorAll('.button')
+		allButtons = Array.from(allButtons)
+		console.log(allButtons)
 
+	document.body.addEventListener('click', function(e){
+		let clickedObj = e.target;
+		console.dir(clickedObj)
 
-let playASound = function() {
-	console.log('playASound', this) // *this* is the button that got clicked
-	console.dir(this);
+		if(clickedObj.classList.contains('button')){
+			console.log('yay!')
+			buttonClicking(clickedObj)
+		} else {
+			console.log('fuck.')
+		}
+	})
 
-	// find button to find audio with matching class *HERE* with this
-
-		//window.onclick = function(e) {
-			// console.log(e); // then e.srcElement.className has the class
-		// }​
-
-
-	if (this.classList.contains('button')) {
-		// document.querySelectorAll('button')
-		this.classList.audio.paused();
-		this.classList.audio.play();	
-	} else {
-		console.log('already playing! stop clicking so fast')
-	}
+let buttonClicking = function(button) {
+	// do all the shit to the button
+	let index = allButtons.indexOf(button)
+	let soundName = allSounds[index]
+	console.log(soundName)
 }
 
-allButtons.forEach(function(oneOfTheManyButtons) {
-	oneOfTheManyButtons.addEventListener('click', playASound)
+// call sound playing function using soundName
+// playSound(soundName)
+
+// find audio
+let allSounds = document.querySelectorAll('.audio')
+	allSounds = Array.from(allSounds)
+	console.dir(allSounds)
+
+	document.body.addEventListener('click', function(e){
+		let clickedObj = e.target;
+		console.log(allSounds)
+
+		if(clickedObj.classList.contains('audio')){
+			
+			console.log('yay!')
+		} else {
+			console.log('fuck.')
+		}
 })
+
+
+
+
+
+
+
+
+
+
+
+
+// OLD STUFF
+
+// let allAudios = document.querySelectorAll('audio');
+
+// allButtons.forEach(function(oneOfTheManyButtons) {
+// 	oneOfTheManyButtons.addEventListener('click', playASound)
+// })
 
 // for (var i = 0; i < allButtons.length; i++) {
 // 	allButtons[i].addEventListener('click', playASound)
 // }
-
-
-
-
 
 // let offeringAudio = document.querySelector('audio.offering')
 // let offeringButton = document.querySelector('button.offering')
@@ -47,4 +78,3 @@ allButtons.forEach(function(oneOfTheManyButtons) {
 // 	}
 // 	console.log('offering button click')
 // })
-
