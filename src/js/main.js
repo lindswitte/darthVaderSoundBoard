@@ -38,13 +38,18 @@ let allSounds = document.querySelectorAll('.audio')
 		let clickedObj = e.target;
 		console.log(allSounds)
 
-		if(clickedObj.classList.contains('audio')){
-			
-			console.log('yay!')
-		} else {
-			console.log('fuck.')
-		}
+		clickedObj.classList.toggle('play');
+		console.log('click!')
+		// if the video isnt playing sound 
+		if ( allSounds.paused === true ){
+			// unpause it
+			allSounds.play()
+			} else {
+				('stop clicking! already playing!')
+			}
 })
+
+
 
 
 
