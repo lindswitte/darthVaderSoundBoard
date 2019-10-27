@@ -38,15 +38,23 @@ let allSounds = document.querySelectorAll('.audio')
 		let clickedObj = e.target;
 		console.log(allSounds)
 
-		clickedObj.classList.toggle('play');
+		clickedObj.classList.contains('.audio');
 		console.log('click!')
-		// if the video isnt playing sound 
+
+		allSounds.forEach(function(allSounds){
+					// if the video isnt playing sound 
 		if ( allSounds.paused === true ){
 			// unpause it
 			allSounds.play()
 			} else {
 				('stop clicking! already playing!')
 			}
+
+		})
+})
+
+allButtons.forEach(function(oneOfTheManyButtons) {
+	oneOfTheManyButtons.addEventListener('click', allSounds)
 })
 
 
