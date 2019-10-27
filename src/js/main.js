@@ -49,7 +49,6 @@ let allSounds = document.querySelectorAll('.audio')
 			} else {
 				('stop clicking! already playing!')
 			}
-
 		})
 })
 
