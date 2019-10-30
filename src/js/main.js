@@ -18,43 +18,38 @@ let allButtons = document.querySelectorAll('.button')
 			console.log('fuck.')
 		}
 	})
-
-let buttonClicking = function(button) {
+ 
+let buttonClicking = function(button){
 	// do all the shit to the button
 	let index = allButtons.indexOf(button)
 	let soundName = allSounds[index]
-	console.log(soundName)
-}
-
-// call sound playing function using soundName
-// playSound(soundName)
-
-// find audio
-let allSounds = document.querySelectorAll('.audio')
-	allSounds = Array.from(allSounds)
 	console.dir(allSounds)
 
-	document.body.addEventListener('click', function(e){
-		let clickedObj = e.target;
-		console.log(allSounds)
+// playSound(soundName)
+
+	let playSound = function(){
+		console.dir(allSounds)
+
+		document.body.addEventListener('click', function(e){
+			let clickedObj = e.target;
+			console.log(soundName)
 
 		clickedObj.classList.contains('.audio');
 		console.log('click!')
 
-		allSounds.forEach(function(allSounds){
-					// if the video isnt playing sound 
-		if ( allSounds.paused === true ){
-			// unpause it
-			allSounds.play()
-			} else {
-				('stop clicking! already playing!')
-			}
+			soundName.forEach(function(button){
+			// if the video isnt playing sound 
+			if ( allSounds.paused === true ){
+				// unpause it
+				allSounds.play()
+				} else {
+					('stop clicking! already playing!')
+				}
+			})
 		})
-})
+	}
+}
 
-allButtons.forEach(function(oneOfTheManyButtons) {
-	oneOfTheManyButtons.addEventListener('click', allSounds)
-})
 
 
 
